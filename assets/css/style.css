@@ -652,6 +652,52 @@ section .container {
   }
 }
 
+/* Scoped styles for the Projects section */
+#projects .project-card {
+  background-color: #010e1b; /* Matches your site's dark theme */
+  border: none; /* Remove border for a cleaner look */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  overflow: hidden; /* Ensure content stays within the card */
+}
+
+#projects .project-card img {
+  width: auto; /* Maintain original width */
+  height: auto; /* Maintain original height */
+  max-width: 100%; /* Ensure it doesn't exceed the card width */
+  max-height: 150px; /* Limit height to keep consistency */
+  display: block;
+  margin: 0 auto; /* Center the image */
+  object-fit: contain; /* Ensure the aspect ratio is preserved */
+  max-height: 200px; /* Limit image height */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space between image and text */
+ 
+}
+
+#projects .project-card h5 {
+  color: #12d640; /* Accent color for titles */
+  font-size: 18px; /* Adjust title size */
+  margin-bottom: 10px; /* Space below title */
+}
+
+#projects .project-card p {
+  font-size: 14px; /* Adjust font size for better readability */
+  color: #ffffff; /* Light text for contrast */
+  margin: 0; /* Reset margin */
+}
+
+#projects .project-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center-align project cards */
+  gap: 20px; /* Adjust spacing between cards */
+}
+
+#projects .card-img-top {
+  border-bottom: 2px solid #12d640; /* Add a subtle underline to images */
+}
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
